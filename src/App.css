@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+
+button {
+  appearance: none;
+  border: 0;
+  border-radius: 5px;
+  background: #4676D7;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 16px;
+}
+
+.gorizont {
+  margin: 0px 50px 0px 50px;
+  display: inline-block;
+  padding: 0px 50px 0px 50px;
+
+}
+
+/* .around {
+  te
+} */
+
+button:hover {
+  background: #1d49aa;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px #cbd6ee;
+}
