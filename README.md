@@ -13,7 +13,8 @@ npx hardhat node
 node scripts/sample-script.js
 npx hardhat help
 ```
-# Comission-display
-# Comission-display
-# Comission-display
+npm install
+and
+npm install ethers hardhat @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers
+
 # ihtfg-Comission-display
