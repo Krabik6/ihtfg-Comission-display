@@ -13,6 +13,10 @@
   }
 }
 
+/* @media screen (min-width: 700px) {
+  color: red;
+} */
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -22,6 +26,10 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .App-link {
@@ -51,12 +59,8 @@ button {
   margin: 0px 50px 0px 50px;
   display: inline-block;
   padding: 0px 50px 0px 50px;
-
 }
 
-/* .around {
-  te
-} */
 
 button:hover {
   background: #1d49aa;
@@ -66,3 +70,4 @@ button:focus {
   outline: none;
   box-shadow: 0 0 0 4px #cbd6ee;
 }
+
