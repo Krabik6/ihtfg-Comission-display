@@ -51,7 +51,7 @@ function App() {
     }, [feeEth, ethereumGasPrice])
 
 
-    const [feeBsc, setFeeBsc] = useState();
+    // const [feeBsc, setFeeBsc] = useState();
     const [bscGasPrice, bscSetGasPrice] = useState();
     async function binanceComission() {
       const provider = await ethers.getDefaultProvider(
@@ -62,9 +62,9 @@ function App() {
       const fGasPrice = ethers.utils.formatUnits(gasPrice, 'gwei'); //36
       bscSetGasPrice(fGasPrice);
   
-      const feeData = await provider.getFeeData();
-      const getFeeData = ethers.utils.formatUnits(feeData.maxFeePerGas, 'gwei');
-      setFeeBsc(getFeeData);
+      // const feeData = await provider.getFeeData();
+      // const getFeeData = ethers.utils.formatUnits(feeData.maxFeePerGas, 'gwei');
+      // setFeeBsc(getFeeData);
     }
   
     useEffect(() => {
@@ -73,8 +73,8 @@ function App() {
       return () => {
       clearInterval(binanceInterval)
       }
-      }, [feeBsc, bscGasPrice])
-
+      }, [ bscGasPrice])
+      // feeBsc,
   return (
     <div className='App'>
       <header className='App-header'>
@@ -93,7 +93,7 @@ function App() {
 
         <div className='gorizont'>
         <h1>Binance:</h1>
-        <p>fee: {feeBsc} </p>
+        {/* <p>fee: {feeBsc} </p> */}
         <p>GasPrice: {bscGasPrice} </p>
         </div>
 
