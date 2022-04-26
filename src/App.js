@@ -13,12 +13,12 @@ function App() {
 
   }
   useEffect(() => {
-    const polygonInterval = setInterval(polygonComission, 2000)
+    const polygonInterval = setInterval(polygonComission, 5000)
     
     return () => {
     clearInterval(polygonInterval)
     }
-    }, [ polygonGasPrice])
+    }, [polygonGasPrice])
 
 
  
@@ -36,7 +36,7 @@ function App() {
   }
 
   useEffect(() => {
-    const ethereumInterval = setInterval(ethereumComission, 2000)
+    const ethereumInterval = setInterval(ethereumComission, 5000)
     
     return () => {
     clearInterval(ethereumInterval)
@@ -59,12 +59,12 @@ function App() {
     }
   
     useEffect(() => {
-      const binanceInterval = setInterval(binanceComission, 2000)
+      const binanceInterval = setInterval(binanceComission, 5000)
       
       return () => {
       clearInterval(binanceInterval)
       }
-      }, [ bscGasPrice])
+      }, [bscGasPrice])
       // feeBsc,
   return (
     <div className='App'>
